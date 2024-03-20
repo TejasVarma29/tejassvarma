@@ -13,8 +13,9 @@
     }
 
     #add-task {
-        background-color: #000;
+        background-color: #0bddec
     }
+
 </style>
 
 <body>
@@ -22,18 +23,29 @@
         <input name="task-name" id="task-name" placeholder="New Task" />
         <button id="add-task">Add Task</button>
     </div>
-    <table>
-        <tr>
-            <th>Task name</th>
-            <th>Done</th>
-            <th>Delete</th>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-    </table>
+    <div class="box">
+        <table>
+            <tr>
+                <th>Task name</th>
+                <th>Done</th>
+                <th>Delete</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
 </body>
+<script>
 
+    {
+        let button = document.getElementById("add-task");
+        button.-addEventListener("click", function( ) {
+            localStorage.setItem("task", "task yha aayega input se")
+        }) 
+        
+    }
+</script>
 </html>
